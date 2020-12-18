@@ -7,4 +7,4 @@ RUN pip install awscli
 RUN curl https://raw.githubusercontent.com/silinternational/ecs-deploy/master/ecs-deploy | tee /usr/bin/ecs-deploy
 RUN chmod a+x /usr/bin/ecs-deploy
 
-ENTRYPOINT ["/bin/bash"]
+CMD ["/bin/bash", "-l", "-c"]
